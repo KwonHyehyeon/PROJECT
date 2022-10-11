@@ -1,10 +1,17 @@
 <?php
     // 기본 설정
     //로컬 서버
+    // $host = "localhost";
+    // $user = "root";
+    // $pass = "root";
+    // $db = "phpclass";
+    // $connect = new mysqli($host, $user, $pass, $db);
+    // $connect -> set_charset("utf8");
+
     $host = "localhost";
-    $user = "root";
-    $pass = "root";
-    $db = "phpclass";
+    $user = "kkk72065";
+    $pass = "Kgpgus9357!";
+    $db = "kkk72065";
     $connect = new mysqli($host, $user, $pass, $db);
     $connect -> set_charset("utf8");
 

@@ -377,18 +377,18 @@ input[id="agreeCheck3"] {
     border-bottom: 2px solid #000;
     margin-bottom: 50px;
 }
-.join__box > div {
+.join__box div {
     width: 100%;
     margin-bottom: 30px;
 }
-.join__box > div label {
+.join__box label {
     display: inline-block;
     font-size: 14px;
     margin-bottom: 5px;
     color: #006241;
     border-bottom: 2px solid #CDEAE0;
 }
-.join__box > div input {
+.join__box div input {
     display: block;
     border: 0;
     background-color: #f5f5f5;
@@ -400,6 +400,11 @@ input[id="agreeCheck3"] {
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.join_box div .msg {
+        width: 100%;
+        padding:10px;
+        color: red;
 }
 .required__N {
     color: #006241;
@@ -478,11 +483,18 @@ span {
     background-color: #006241;
     position: absolute;
     width: 7.5%;
-    top: -300%;
+    top: 32%;
     left: 101%;
 }
+.msg {
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    top: 47%;
+    left: 18%;
+}
 /* 사용 가능한 아이디 아닌 아이디 */
-.id__already {
+/* .id__already {
     font-size: 10px;
     color: blue;
     display: none;
@@ -493,10 +505,13 @@ span {
     color: red;
     margin-top: -20px;
     display: none;
-}
+} */
 /* 버튼 및 가상요소 */
+.joinend__btn {
+    display: flex;
+    justify-content: center;
+}
 .joinend__btn a{
-    display: inline-block;
     text-align: center;
     background-color: #cdeae0;
     border: 2px solid #006241;
@@ -507,16 +522,14 @@ span {
     border-radius: 30px;
     cursor: pointer;
     margin-top: 20px;
-    margin-left: 25.5%;
 }
-.joinend__btn a.joinfinish {
-    display: inline-block;
+.joinend__btn .joinfinish {
     text-align: center;
     background-color: #006241;
     color: #fff;
     padding: 1rem;
     font-size: 1rem;
-    width: 160px;
+    width: 200px;
     border-radius: 30px;
     cursor: pointer;
     margin-top: 20px;
@@ -550,7 +563,7 @@ span {
     .required__N {
         right: 7%;
     }
-    .join__box > div > .input__width {
+    .join__box div .input__width {
         width: 86%;
     }
     .double__check {
@@ -560,16 +573,15 @@ span {
     .joinend__btn {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     .joinend__btn a{
         width: 220px;
         margin: 0 auto;
     }
-    .joinend__btn a.joinfinish {
-        width: 220px;
-        margin: 0;
-        margin-top: 20px;
+    .joinend__btn .joinfinish {
+        width: 260px;
+        margin: 20px auto 0 auto;
     }
 }
 @media (max-width:1170px) {
@@ -581,8 +593,8 @@ span {
     .joinend__btn a{
         width: 180px;
     }
-    .joinend__btn a.joinfinish {
-        width: 180px;
+    .joinend__btn .joinfinish {
+        width: 220px;
     }
 }
 @media (max-width:786px) {
@@ -611,8 +623,8 @@ span {
         width: 160px;
         margin-top: 20px;
     }
-    .joinend__btn a.joinfinish {
-        width: 160px;
+    .joinend__btn .joinfinish {
+        width: 200px;
     }
     .joinend__btn a::before {
         display: none;
@@ -630,7 +642,7 @@ span {
         width: 16%;
         left: 82%;
     }
-    .join__box > div > .input__width {
+    .join__box div .input__width {
         width: 80%;
     }
 }
@@ -648,8 +660,8 @@ span {
     .joinend__btn a {
         width: 130px;
     }
-    .joinend__btn a.joinfinish {
-        width: 130px;
+    .joinend__btn .joinfinish {
+        width: 170px;
     }
 }
 @media (max-width:390px) {
@@ -657,7 +669,7 @@ span {
         width: 20%;
         left: 77%;
     }
-    .join__box > div > .input__width {
+    .join__box div .input__width {
         width: 75%;
     }
 }
