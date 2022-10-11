@@ -1,0 +1,877 @@
+/* joinAgree페이지 */
+#joinAgree {
+    padding: 120px 0;
+    position: relative;
+}
+#joinAgree h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #006241;
+    font-weight: 700;
+}
+#joinAgree h2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    top:190px;
+}
+#joinAgree h2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 185px;
+}
+.agree__inner {
+    margin: 150px 200px;
+}
+.agree__inner > div {
+    display: inline;
+}
+.agree__inner > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    width: 77px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+/* input 버튼 */
+.joinAgree_check1 {
+    position: relative;
+    margin-bottom: 40px;
+}
+input[id="agreeCheck1"] + label {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #006241;
+    border-radius: 50%;
+	cursor: pointer;
+}
+input[id="agreeCheck1"]:checked + label {
+    background: url(../img/Vector\ 21.svg) no-repeat center;
+	background-color: #006241;
+}
+input[id="agreeCheck1"] {
+	display: none;
+}
+.joinAgree_check1 > div {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #006241;
+}
+.joinAgree_check2 {
+    position: relative;
+    margin-bottom: 30px;
+}
+input[id="agreeCheck2"] + label {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #006241;
+    border-radius: 50%;
+	cursor: pointer;
+}
+input[id="agreeCheck2"]:checked + label {
+    background: url(../img/Vector\ 21.svg) no-repeat center;
+	background-color: #006241;
+}
+input[id="agreeCheck2"] {
+	display: none;
+}
+.joinAgree_check2 > div {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006241;
+}
+.joinAgree_check2 > div em {
+    font-weight: 700;
+}
+.joinAgree_check3 {
+    position: relative;
+    margin-bottom: 30px;
+}
+input[id="agreeCheck3"] + label {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #006241;
+    border-radius: 50%;
+	cursor: pointer;
+}
+input[id="agreeCheck3"]:checked + label {
+    background: url(../img/Vector\ 21.svg) no-repeat center;
+	background-color: #006241;
+}
+input[id="agreeCheck3"] {
+	display: none;
+}
+.joinAgree_check3 > div {
+    position: absolute;
+    width: 300px;
+    top: -7px;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006241;
+}
+.joinAgree_check3 > div em {
+    font-weight: 700;
+}
+.agree__inner > div .desc {
+  background-color: #f5f5f5;
+  color: #666;
+  padding: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  height: 150px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+.agree__inner > div .desc:last-child {
+    margin-top: 20px;
+}
+.agree__inner .btn {
+  margin: 0 auto;
+  width: 400px;
+  background: #006241;
+  text-align: center;
+  color: #fff;
+  display: block;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  padding: 0.7em;
+  cursor: pointer;
+}
+.agree__inner .check {
+  margin-top: 5px;
+}
+/* 버튼과 가상요소 */
+.join__btn {
+    display: flex;
+    margin: 0 180px;
+    padding-left: 40px;
+}
+.join__btn a {
+    display: inline-block;
+    text-align: center;
+    background-color: #cdeae0;
+    border: 2px solid #006241;
+    color: #006241;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 160px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.join__btn .btn2 {
+    /* display: inline-block;
+    text-align: center; */
+    background-color: #006241;
+    color: #fff;
+    /* padding: 1rem;
+    font-size: 1rem;
+    width: 160px;
+    border-radius: 30px;
+    cursor: pointer; */
+    margin-left: 30px;
+}
+.join__btn a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    bottom: 180px;  
+}
+.join__btn a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 175px;
+}
+/* 공통 푸터 */
+#join__footer {
+    color: #006241;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+/* 미디어쿼리 */
+@media (max-width:1280px) {
+    .agree__inner {
+        padding: 170px 80px;
+        margin: 0;
+    }
+    .join__btn a {
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+    }
+    .join__btn .btn2 {
+        width: 220px;
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+}
+@media (max-width:1090px) {
+    .join__btn a {
+        width: 180px;
+    }
+    .join__btn .btn2 {
+        width: 180px;
+    }
+}
+@media (max-width:786px) {
+    #joinAgree {
+        padding: 50px 0 ;
+        position: relative;
+        background-color: #006241;
+    }
+    #joinAgree h2 {
+        background-color: #006241;
+        color: #fff;
+        margin-top: 70px;
+    }
+    #joinAgree h2::before {
+        display: none;
+    }
+    #joinAgree h2::after {
+        display: none;
+    }
+    .agree__inner {
+        padding: 50px 50px;
+        margin-top: 50px;
+        background-color: #fff;
+    }
+    .join__btn a {
+        width: 160px;
+    }
+    .join__btn .btn2 {
+        width: 160px;
+        margin-bottom: 0;
+    }
+    .join__btn a::before {
+        display: none;
+    }
+    .join__btn a::after {
+        display: none;
+    }
+    #join__footer {
+        color: #fff;
+        margin-top: 50px;
+    }
+}
+@media (max-width:480px) {
+    .agree__inner {
+        padding: 50px 40px;
+        margin-top: 50px;
+    }
+    .agree__inner > h3 {
+        font-size: 18px;
+        font-weight: 700;
+        width: 70px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 50px;
+    }
+    .joinAgree_check1 > div {
+        font-size: 14px;
+        top: 3%;
+        left: 23px;
+    }
+    input[id="agreeCheck1"] + label {
+        width: 13px;
+        height: 13px;
+    }
+    .joinAgree_check2 > div {
+        font-size: 14px;
+        top: 3%;
+        left: 23px;
+    }
+    input[id="agreeCheck2"] + label {
+        width: 13px;
+        height: 13px;
+    }
+    .joinAgree_check3 > div {
+        font-size: 14px;
+        top: -20%;
+        left: 23px;
+    }
+    input[id="agreeCheck3"] + label {
+        width: 13px;
+        height: 13px;
+    }
+    .join__btn a {
+        width: 130px;
+    }
+    .join__btn .btn2 {
+        width: 130px;
+    }
+    .agree__inner > div .desc {
+        height: 70px;
+    }
+}
+/* 회원가입 페이지 */
+#join {
+    padding: 120px 0;
+    position: relative;
+}
+#join h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #006241;
+    font-weight: 700;
+}
+#join h2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    top:190px;
+}
+#join h2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 185px;
+}
+.join__inner {
+    margin: 150px 200px;
+}
+.join__inner legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+/* 회원가입 요소들 */
+.join__inner > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    width: 127px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+.join__box > div {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.join__box > div label {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #006241;
+    border-bottom: 2px solid #CDEAE0;
+}
+.join__box > div input {
+    display: block;
+    border: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.required__N {
+    color: #006241;
+    position: absolute;
+    font-size: 12px;
+    top: 25%;
+    right: 16%;
+}
+/* 성별 버튼 */
+.join__box > span label {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #006241;
+    border-bottom: 2px solid #CDEAE0;
+}
+.gender > .gender__btn {
+    border: 0;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.gender > .gender__btn > span {
+    margin-right: 10px;
+}
+.gender {
+    margin-bottom: 20px;
+}
+[type="radio"] {
+    vertical-align: middle;
+    appearance: none;
+    border: max(0.5px, 0.1em) solid gray;
+    border-radius: 90%;
+    width: 1em;
+    height: 1em;
+    transition: border 0.5s ease-in-out;
+}
+span {
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+[type="radio"]:checked {
+  border: 0.3em solid #006241;
+}
+
+[type="radio"]:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+  cursor: pointer;
+}
+
+[type="radio"]:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+[type="radio"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* 중복 확인 */
+.email_C {
+    position: relative;
+}
+.double__check {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 15px;
+    background-color: #006241;
+    position: absolute;
+    width: 7.5%;
+    top: -300%;
+    left: 101%;
+}
+/* 사용 가능한 아이디 아닌 아이디 */
+.id__already {
+    font-size: 10px;
+    color: blue;
+    display: none;
+    margin-top: -20px;
+}
+.id__able {
+    font-size: 10px;
+    color: red;
+    margin-top: -20px;
+    display: none;
+}
+/* 버튼 및 가상요소 */
+.joinend__btn a{
+    display: inline-block;
+    text-align: center;
+    background-color: #cdeae0;
+    border: 2px solid #006241;
+    color: #006241;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 160px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 25.5%;
+}
+.joinend__btn a.joinfinish {
+    display: inline-block;
+    text-align: center;
+    background-color: #006241;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 160px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.joinend__btn a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    bottom: 180px;  
+}
+.joinend__btn a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 175px;
+}
+/* 미디어쿼리 */
+@media (max-width:1280px) {
+    .join__inner {
+        padding: 170px 80px;
+        margin: 0;
+    }
+    .required__N {
+        right: 7%;
+    }
+    .join__box > div > .input__width {
+        width: 86%;
+    }
+    .double__check {
+        width: 11%;
+        left: 87%;
+    }
+    .joinend__btn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .joinend__btn a{
+        width: 220px;
+        margin: 0 auto;
+    }
+    .joinend__btn a.joinfinish {
+        width: 220px;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+@media (max-width:1170px) {
+    .required__N {
+        display: none;
+    }
+}
+@media (max-width:1090px) {
+    .joinend__btn a{
+        width: 180px;
+    }
+    .joinend__btn a.joinfinish {
+        width: 180px;
+    }
+}
+@media (max-width:786px) {
+    #join {
+        padding: 50px 0 ;
+        position: relative;
+        background-color: #006241;
+    }
+    #join h2 {
+        background-color: #006241;
+        color: #fff;
+        margin-top: 70px;
+    }
+    #join h2::before {
+        display: none;
+    }
+    #join h2::after {
+        display: none;
+    }
+    .join__inner {
+        padding: 50px 50px;
+        margin-top: 50px;
+        background-color: #fff;
+    }
+    .joinend__btn a {
+        width: 160px;
+        margin-top: 20px;
+    }
+    .joinend__btn a.joinfinish {
+        width: 160px;
+    }
+    .joinend__btn a::before {
+        display: none;
+    }
+    .joinend__btn a::after {
+        display: none;
+    }
+    #join__footer {
+        color: #fff;
+        margin-top: 50px;
+    }
+}
+@media (max-width:550px) {
+    .double__check {
+        width: 16%;
+        left: 82%;
+    }
+    .join__box > div > .input__width {
+        width: 80%;
+    }
+}
+@media (max-width:480px) {
+    .join__inner {
+        padding: 50px 40px;
+    }
+    .join__inner > h3 {
+        font-size: 18px;
+        font-weight: 700;
+        width: 114px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 50px;
+    }
+    .joinend__btn a {
+        width: 130px;
+    }
+    .joinend__btn a.joinfinish {
+        width: 130px;
+    }
+}
+@media (max-width:390px) {
+    .double__check {
+        width: 20%;
+        left: 77%;
+    }
+    .join__box > div > .input__width {
+        width: 75%;
+    }
+}
+
+
+
+
+/* 회원가입 완료 */
+#joinResult {
+    padding: 120px 0;
+    position: relative;
+}
+.joinResultWrap {
+    display: flex;
+    justify-content: center;
+}
+.joinResultWrap > a {
+    display: flex;
+}
+.joinResultWrap > a >h2 {
+    font-size: 28px;
+    color: #006241;
+    font-weight: 700;
+}
+.joinResultWrap h2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    top:190px;
+}
+.joinResultWrap h2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 185px;
+}
+.joinResultWrap > a > figure > img {
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+}
+.result__inner {
+    width: 100%;
+    margin: 200px 0;
+}
+.result__inner legend {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+/* 회원가입 요소들 */
+.result__inner > h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.result__inner > figure > img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    transform: rotate(-10deg);
+    animation: hero 3s 0.5s;
+}
+@keyframes hero {
+    0% {rotate: 0deg}
+    100% {rotate: 360deg}
+}
+.result__inner > p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 100px;
+    color: #006241;
+    word-break: keep-all;
+}
+/* 버튼 및 가상요소 */
+.result__btn a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000;
+    left: 0;
+    bottom: 180px;  
+}
+.result__btn a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 175px;
+}
+.result__btn .result__btn__img {
+    background: url(../img/earthonbtndesign.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    margin: 0 auto;
+}
+.result__btn .result__btn__img:first-child {
+    margin-bottom: 15px;
+}
+.result__btn {
+    justify-content: center;
+}
+.result__btn a {
+    display: block;
+    color: #006241;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 11px 30px 10px 50px;
+}
+
+/* 미디어쿼리 */
+@media (max-width:1280px) {
+    .result__inner {
+        padding: 170px 0;
+        margin: 0;
+    }
+}
+@media (max-width:1060px) {
+    .result__inner > h3 {
+        font-size: 20px;
+    }
+    .result__inner > p {
+        font-size: 14px;
+    }
+}
+@media (max-width:880px) {
+    .result__inner > p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .result__btn {
+        margin-top: 100px;
+    }
+}
+@media (max-width:786px) {
+    #joinResult {
+        padding: 50px 0 ;
+        position: relative;
+        background-color: #006241;
+    }
+    #joinResult h2 {
+        background-color: #006241;
+        color: #fff;
+        margin-top: 70px;
+    }
+    #joinResult h2::before {
+        display: none;
+    }
+    #joinResult h2::after {
+        display: none;
+    }
+    .joinResultWrap > a > figure > img {
+        padding-top: 70px;
+        margin-left: 5px;
+    }
+    .result__inner {
+        padding: 50px 0;
+        margin-top: 50px;
+        background-color: #fff;
+    }
+    .result__inner > p {
+        font-size: 14px;
+    }
+    .result__btn a::before {
+        display: none;
+    }
+    .result__btn a::after {
+        display: none;
+    }
+}
+@media (max-width:480px) {
+    .join__inner {
+        padding: 50px 40px;
+    }
+    .joinend__btn a {
+        width: 130px;
+    }
+    .joinend__btn a.joinfinish {
+        width: 130px;
+    }
+}
+@media (max-width:390px) {
+    .joinResultWrap > a {
+        display: flex;
+    }
+    .joinResultWrap > a >h2 {
+        font-size: 22px;
+        color: #006241;
+        font-weight: 700;
+    }
+    .joinResultWrap > a > figure > img {
+        min-width: 100%;
+        height: 24px;
+        margin-left: 3px;
+    }
+}
+
+
+
+
