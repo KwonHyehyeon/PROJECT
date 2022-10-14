@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지 (정보 수정)</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/myPage.css">
+
+</head>
+<body>
+    <section id="editInfo" class="container">
+        <h2>마이페이지</h2>
+        <div class="box__line2">
+            <div class="editInfo__wrap">
+                <h3>회원정보<span> * 필수 입력 사항</span></h3>
+                <table class="profile">
+                    <tbody>
+                        <tr>
+                            <td>프로필</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../assets/img/personal.png" class="personal" alt="이미지">
+                                <img src="../assets/img/edit_icon.png" class="update" alt="편집 아이콘">
+                                <div class="profileInfo">
+                                    <h4>oranssy.daum.net</h4>
+                                    <p>오란씨</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //profile -->
+                <table class="memberInfo">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">회원정보</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="youName">*이름</label>
+                                <input type="email" id="youName" name="youName" placeholder="이름을 입력해주세요." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="youGender">*성별</label>
+                                <fieldset class="gender">
+                                      <input class="gender__btn" type="radio" name="gender" value="man"/>
+                                      <span>남</span>
+                                      <input class="gender__btn" type="radio" name="gender" value="woman"/>
+                                      <span>여</span>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="youPass">*비밀번호</label>
+                                <input type="password" id="youPass" name="youPass" placeholder="변경할 비밀번호를 입력해주세요." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="youPassC">*비밀번호 확인</label>
+                                <input type="password" id="youPassC" name="youPassC" placeholder="비밀번호를 다시 입력해주세요." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="youPhone">*전화번호</label>
+                                <input type="text" id="youPhone" name="youPhone" placeholder="휴대폰 번호를 입력해주세요." required>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="PWcheck__btn">
+                    <button type="submit"><a class="PWcheck__end" href="editInfo.html">회원정보 변경</a></button>
+                </div>
+            </div>
+            <!-- //editInfo__wrap -->
+        </div>
+
+    </section>
+    <!-- //editInfo -->
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* myPage */
+#PWcheck {
+    width: 100%;
+    margin-top: 70px;
+}
+#PWcheck h2 {
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: under;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.box__line1 {
+    border-top: 1px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 2px 0;
+    box-sizing: border-box;
+}
+.PWcheck__wrap {
+    width: 100%;
+    padding: 100px 200px;
+    box-sizing: border-box;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #000;
+}
+.PWcheck__wrap > h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.PWcheck__wrap > h3 span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #006241;
+    margin-left: 20px;
+}
+.PWcheck__box {
+    margin-top: 20px;
+    border-top: 2px solid #006241;
+    border-bottom: 2px solid #006241;
+    padding: 5px 0 4px 0;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.PWcheck__box label {
+    padding: 14px 60px;
+    box-sizing: border-box;
+    background: #006241;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.PWcheck__box input {
+    margin-left: 5px;
+    border: 0px;
+    background: #f3f3f3;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.PWcheck__btn {
+    justify-content: center;
+}
+.PWcheck__btn button {
+    border: 3px solid #006241;
+    padding: 12px 50px;
+    background: #fff;
+    border-radius: 50px;
+}
+.PWcheck__btn .PWcheck__end {
+    font-size: 16px;
+    color: #006241;
+}
+
+/* editInfo */
+#editInfo {
+    width: 100%;
+    margin-top: 80px;
+}
+#editInfo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.box__line2 {
+    border-top: 1px solid #000;
+    padding: 2px 0;
+    box-sizing: border-box;
+}
+.editInfo__wrap {
+    border-top: 3px solid #000;
+    padding: 90px 0;
+    box-sizing: border-box;
+}
+.editInfo__wrap h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.editInfo__wrap h3 span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #006241;
+    margin-left: 20px;
+}
+.profile {
+    width: 100%;
+    border: 1px solid #006241;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.profile tbody tr:nth-child(1) td {
+    background: #006241;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 60px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+}
+.profile tbody tr:nth-child(2) td {
+    padding: 30px 50px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+.profile tbody tr td .personal {
+    width: 150px;
+
+}
+.profile tbody tr td .update {
+    width: 30px;
+    position: absolute;
+    left: 14%;
+    bottom: 14%;
+}
+.profile tbody tr td .profileInfo {
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+.profile tbody tr td .profileInfo h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.profile tbody tr td .profileInfo p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.memberInfo {
+    width: 100%;
+    border: 1px solid #006241;
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+.memberInfo tbody tr td {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.memberInfo tbody tr:nth-child(1) td {
+    background: #006241;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 60px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+}
+.memberInfo tbody tr:nth-child(2) td {
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.memberInfo tbody tr td label {
+    padding: 12px 60px;
+    background: #aaaaaa;
+    border-radius: 7px;
+    color: #fff;
+}
+.memberInfo tbody tr td input {
+    border: 0px;
+    background: #f3f3f3;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.memberInfo tbody tr:nth-child(3) td .gender {
+    display: inline-block;
+    width: 140px;
+    padding: 13px 30px;
+}
+.memberInfo tbody tr:nth-child(3) td .gender__btn {
+    margin-right: 10px;
+}
+.memberInfo tbody tr:nth-child(3) td .span {
+    padding-right: 20px;
+}
+.memberInfo tbody tr:nth-child(4) td label {
+    padding: 12px 44px;
+}
+.memberInfo tbody tr:nth-child(5) td label {
+    padding: 12px 25px;
+}
+.memberInfo tbody tr:nth-child(6) td label {
+    padding: 12px 44px;
+}
