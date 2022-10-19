@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 02</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header02.css">
+
+    <style>
+        .section1 {
+            background: powderblue;
+            height: 500px;
+        }
+
+        #main {
+            background: linear-gradient(to bottom, rgba(66, 92, 75, 0.6) 0%, rgba(66, 92, 80, 0.6) 100%), url(../assets/img/mainpage.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .main__wrap {
+            display: block;
+            height: 100vh;
+            min-height: 40rem;
+            padding-top: 4.5rem;
+            padding-bottom: 0;
+        }
+        .main__title {
+            margin-top: 120px;
+            font-size: 6rem;
+            color: #fff;
+        }
+        .main__desc {
+            margin-top: 30px;
+            font-size: 1.3rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .main__btn {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main__btn a {
+            color: #fff;
+            font-size: 1.5em;
+            border-bottom: 2px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#"><img src="../assets/img/footer_logo.png" alt="지구ON 로고"></a></h1>
+        <h2><a href="#"><img src="../assets/img/logo.png" alt="지구ON 로고"></a></h2>
+        
+
+        <!-- 메인 전용 헤더 -->
+        <nav class="mainpage__nav">
+            <ul class="mainpage__menuWrap">
+                <li><a href="#" class="big_menu">지구ON 소개</a>
+                    <ul class="m__submenu">
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mainpage__menuWrap">
+                <li><a href="#" class="big_menu">기후 소식</a>
+                    <ul class="m__submenu">
+                        <li><a href="#">국내 뉴스</a></li>
+                        <li><a href="#">해외 뉴스</a></li>
+                        <li><a href="#">캠페인 & 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mainpage__menuWrap">
+                <li><a href="#" class="big_menu">제로웨이스트</a>
+                    <ul class="m__submenu">
+                        <li><a href="#">상품 추천</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mainpage__menuWrap">
+                <li><a href="#" class="big_menu">커뮤니티</a>
+                    <ul class="m__submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이야기방</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__menu__button">
+            <div class="header__ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__text">MENU</div>
+        </div>
+    </header>
+    <!-- // header-->
+
+    <main id="main">
+        <div class="main__wrap container">
+            <h2 class="main__title">A Right Move <br> to Earth</h2>
+            <p class="main__desc">
+                기후 위기 대응을 위한 지구ON, <br>
+                기후 위기의 실체와 대응 실천 방법을 제공하여 미래 환경을 변화시킵니다.
+            </p>
+            <div class="main__btn">
+                <a href="#">RISK</a>
+                <a href="#">PURPOSE</a>
+                <a href="#">SOLUTION</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="section1">
+        1
+    </section>
+
+    <section class="section1">
+        1
+    </section>
+
+    <section class="section1">
+        1
+    </section>
+
+    <section class="section1">
+        1
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/header02.js"></script>
+</body>
+</html>

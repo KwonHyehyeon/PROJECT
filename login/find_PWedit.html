@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 찾기 : 휴대폰</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body>
+    <!-- 비밀번호 찾기 팝업 -->
+    <div class="findPW__popup open">
+        <div class="findPW__inner">
+            <div class="findPW__header">
+                <h3>아이디·비밀번호 찾기</h3>
+            </div>
+            <div class="find__btn">
+                <a class="findID__btn" href="find_ID.html">아이디</a></li>
+                <a class="findPW__btn active" href="find_PW.html">비밀번호</a></li>
+            </div>
+            <div class="findPW__contents">
+                <p class="findPW__desc">
+                    비밀번호를 변경할 수 있습니다. <br>
+                    새로 사용할 비밀번호를 입력해주세요.
+                </p>
+                <form name="findPWbyEmail" action="../findPW/findPWbyEmail.php" method="post">
+                    <fieldset>
+                        <legend>비밀번호 찾기 입력폼</legend>
+                        <div class="input_and_button">
+                            <label for="youNewPass">새 비밀번호</label>
+                            <input type="password" name="youNewPass" id="youNewPass" placeholder="새 비밀번호 입력" class="input__style" required>
+                        </div>
+                        <div class="input_and_button">
+                            <label for="youNewPassC">새 비밀번호 확인</label>
+                            <input type="password" name="youNewPassC" id="youNewPassC" placeholder="새 비밀번호 재입력" class="input__style" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="findResultLogin__button">비밀번호 변경</button>
+                  </form>
+            </div>
+            <div class="findPW__footer">
+                <ul class="desc">
+                    <li>지구ON</li>
+                </ul>
+                <button type="button" class="btn-close"><span>닫기</span></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

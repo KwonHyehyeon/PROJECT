@@ -31,8 +31,10 @@
     <main id="main">
         <section id="banner">
             <div class="banner__wrap">
-                <h2>커뮤니티</h2>
-                <p>이곳은 소통하는 공간입니다. <br> 지구 ON은 당신이 서 있는 오늘과 걸어온 모든 하루를 응원합니다.</p>
+                <h2>가짜 게시판</h2>
+                <p>아직 메인 페이지를 완성하지 못해 부득이하게 게시판 HTML만 복붙했습니다. <br> 
+                    진짜 게시판으로 가시고 싶으시면 헤더의 커뮤니티를 클릭하여 가주시기 바랍니다.
+                </p>
                 <img src="../assets/img/board_img01.png" alt="커뮤니티 이미지">
             </div>
         </section>

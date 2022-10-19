@@ -28,10 +28,10 @@ ob_start();
 
     <main id="main">
         <section id="banner"> 
-            <h2></h2>
-            <div class="banner__wrap container">
+            <h2>로그인 페이지입니다.</h2>
+            <div class="banner__inner2 container">
                 <div class="img">
-                    <img src="../assets/img/board_img01.png" alt="배너 이미지">
+                    <img src="../assets/img/banner_img02.svg" alt="배너 이미지">
                 </div> 
                 <div class="desc">
 <?php
@@ -41,19 +41,21 @@ ob_start();
     // echo $youEmail, $youPass; 
 
     function msg($alert){
-        echo "<p class='arert'>{$alert}<p/>";
+        echo "<p class='alert'>{$alert}<p/>";
     }
 
     // 이메일 검사
     if( !filter_var($youEmail, FILTER_VALIDATE_EMAIL)){
-        msg("이메일이 잘못되었습니다 <br> 올바른 이메일을 적어주세요!!!");
-        exit;
+        // msg("이메일이 잘못되었습니다 <br> 올바른 이메일을 적어주세요!!!");
+        echo "<script>alert('이메일이 잘못되었습니다. 올바른 이메일을 적어주세요!!!'); history.back(1);</script>";
+        // exit;
     }
 
     // 비밀번호 검사
-    if( $youPass == null || $youPass == '' ){
-        msg("비밀번호를 입력해주세요!");
-        exit;
+    if( $youPass == null || $youPass == ''){
+        // msg("비밀번호를 입력해주세요!");
+        echo "<script>alert('비밀번호를 입력해주세요!'); history.back(1);</script>";
+        // exit;
     }
 
     // 데이터 가져오기 --> 유효성 검사  -->  데이터 조회  --> 로그인
@@ -64,7 +66,8 @@ ob_start();
         $count = $result -> num_rows;
 
         if($count == 0){
-            msg("이메일 또는 비밀번호가 틀렸습니다.");
+            // msg("이메일 또는 비밀번호가 틀렸습니다.");
+            echo "<script>alert('이메일 또는 비밀번호가 틀렸습니다.'); history.back(1);</script>";
             
         } else {
             $info = $result -> fetch_array(MYSQLI_ASSOC);
@@ -80,7 +83,8 @@ ob_start();
             Header("Location: ../main/main.php");
         }
     } else {
-        msg("에러발생 - 관리자에게 문의하세요!");
+        // msg("에러발생 - 관리자에게 문의하세요!");
+        echo "<script>alert('에러발생 - 관리자에게 문의하세요!'); history.back(1);</script>";
     }
 ?>
                 </div>

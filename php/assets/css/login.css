@@ -130,9 +130,6 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    display: none;
-  }
-  .findID__popup.open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,7 +250,7 @@
     font-weight: 700;
     text-align: center;
   }
-  .findID__footer .btn-close {
+  .findID__footer .btn-close, .findID__footer .btn-home {
     position: absolute;
     right: 44%;
     top: -25px;
@@ -266,7 +263,7 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
-  .findID__footer .btn-close span {
+  .findID__footer .btn-close span, .findID__footer .btn-home span {
     display: block;
     overflow: hidden;
     font-size: 0;
@@ -284,9 +281,6 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    display: none;
-  }
-  .findPW__popup.open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,7 +416,7 @@
     font-weight: 700;
     text-align: center;
   }
-  .findPW__footer .btn-close {
+  .findPW__footer .btn-close, .findPW__footer .btn-home {
     position: absolute;
     right: 44%;
     top: -25px;
@@ -435,7 +429,7 @@
     background-repeat: no-repeat;
     cursor: pointer;
   }
-  .findPW__footer .btn-close span {
+  .findPW__footer .btn-close span, .findPW__footer .btn-home span {
     display: block;
     overflow: hidden;
     font-size: 0;

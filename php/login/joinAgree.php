@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP 사이트 만들기</title>
 
-    
-    <link rel="stylesheet" href="../assets/css/join.css">
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
+    <?php include "../include/link.php" ?>
 </head>
 <body>
     <div id="skip">
@@ -19,8 +14,11 @@
         <a href="#main">컨텐츠 영역 바로가기</a>
         <a href="#footer">푸터 영역 바로가기</a>
     </div>
+    <!-- //skip -->
 
     <?php include "../include/header.php" ?>
+    <!-- //header -->
+
     <section id="joinAgree" class="container">
         <h2>회원가입</h2>
         <div class="agree__inner">
@@ -80,7 +78,13 @@
         <footer id="join__footer">지구 ON</footer>
     </section>
     <!-- //section -->
+
+    <?php include "../login/login.php" ?>
+    <!-- //login -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/header.js"></script>  
+    <script src="../assets/js/custom.js"></script>  
     <script>
 
         // 전체선택 후 하나만 해제했을 때, 전체선택도 해체 해주기

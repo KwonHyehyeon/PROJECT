@@ -3,7 +3,7 @@
 
     // 변수 설정
     $type = $_POST['type'];
-    $sql = "SELECT youEmail FROM myMember ";
+    $sql = "SELECT youEmail FROM myAdminMember ";
 
     if($type == "emailCheck"){
         $youEmail = $connect -> real_escape_string(trim($_POST['youEmail']));
@@ -17,7 +17,6 @@
     if($result -> num_rows == 0){
         $jsonResult = "good";
     }
-    
-    //json good 전송  //("result => $jsonResult")데이터 값
+
     echo json_encode(array("result" => $jsonResult));
 ?>
